@@ -3,11 +3,14 @@ using Xunit;
 
 namespace blackjack
 {
-    public class UnitTest1
+    public class DeckTests
     {
         [Fact]
-        public void Test1()
+        public void DeckHasCards()
         {
+            var deck = new Deck();
+            
+            Assert.True(deck.Cards.Count > 0);
         }
     }
 }
