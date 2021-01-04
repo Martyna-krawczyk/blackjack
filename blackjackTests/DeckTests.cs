@@ -12,5 +12,13 @@ namespace blackjack
             
             Assert.True(deck.Cards.Count > 0);
         }
+        
+        [Fact]
+        public void DeckHas52Cards()
+        {
+            var deck = new Deck();
+            
+            Assert.True(deck.Cards.Count == 52);
+        }
     }
 }

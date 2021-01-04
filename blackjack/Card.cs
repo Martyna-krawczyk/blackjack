@@ -2,7 +2,7 @@ namespace blackjack
 {
     public class Card
     {
-        public Card(int rank, Suit suit)
+        public Card(Rank rank, Suit suit)
         {
             Rank = rank;
             Suit = suit;
@@ -10,7 +10,7 @@ namespace blackjack
 
         public Suit Suit { get; set; }
 
-        public int Rank { get; set; }
+        public Rank Rank { get; set; }
         
         
     }

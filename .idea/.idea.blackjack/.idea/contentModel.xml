@@ -23,12 +23,14 @@
           </e>
         </e>
         <e p="Program.cs" t="Include" />
+        <e p="Rank.cs" t="Include" />
         <e p="Suit.cs" t="Include" />
       </e>
       <e p="blackjack.sln" t="IncludeFlat" />
       <e p="blackjackTests" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
         <e p="blackjackTests.csproj" t="IncludeRecursive" />
+        <e p="DeckTests.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netcoreapp3.1" t="Include">
@@ -36,7 +38,6 @@
             </e>
           </e>
         </e>
-        <e p="UnitTest1.cs" t="Include" />
       </e>
       <e p="packages" t="ExcludeRecursive" />
     </e>

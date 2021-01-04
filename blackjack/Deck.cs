@@ -7,12 +7,18 @@ namespace blackjack
     {
         public Deck()
         {
-            Cards = new List<Card>
-            {
-                new Card(2, Suit.Club)
-            };
-        }
+            var cardList = new List<Card>();
 
+            for (int suit = 0; suit < 4; suit++)
+            {
+                for (int rank = 0; rank < 13; rank++)
+                {
+                    cardList.Add(new Card((Rank)rank, (Suit)suit ));
+                }
+            }
+
+            Cards = cardList;
+        }
         public List<Card> Cards { get; set; }
     }
 }
