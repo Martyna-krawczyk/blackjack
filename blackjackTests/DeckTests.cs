@@ -1,4 +1,5 @@
 using System;
+using System.Linq;
 using Xunit;
 
 namespace blackjack
@@ -19,6 +20,17 @@ namespace blackjack
             var deck = new Deck();
             
             Assert.True(deck.Cards.Count == 52);
+        }
+        
+        [Fact]
+        public void DeckHasNoDuplicateCards()
+        {
+            var deck = new Deck();
+
+            var expected = 52;
+            var actual = deck.Cards.Distinct().Count();
+            
+            Assert.Equal(expected, actual);
         }
     }
 }
